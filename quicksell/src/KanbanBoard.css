@@ -1,0 +1,49 @@
+/* KanbanBoard.css */
+.kanban-board {
+  display: flex;
+  justify-content: space-between; /* Distribute columns evenly */
+}
+
+.kanban-column {
+  flex: 1; /* Each column takes equal width */
+  margin: 0 10px; /* Add spacing between columns */
+}
+
+.kanban-column h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ticket-card {
+  /* Add your styling for the individual cards here */
+  border: 1px solid #ddd; /* Example border */
+  border-radius: 8px; /* Example border radius */
+  margin-bottom: 10px; /* Add spacing between cards */
+  padding: 10px; /* Add padding for better readability */
+  width: 100%; /* Make the card take full width of the container */
+  max-width: 400px; /* Set a maximum width for the card */
+  height: 120px; /* Set a fixed height for the card */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+.ticket-card img {
+  width: 50px; /* Example width for the image */
+  height: 50px; /* Example height for the image */
+  object-fit: cover; /* Maintain aspect ratio for the image */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.ticket-card h3 {
+  font-size: 14px; /* Example font size for the title */
+  margin-bottom: 5px; /* Add spacing between title and other content */
+}
+
+.ticket-card p {
+  font-size: 12px; /* Example font size for additional content */
+  color: #555; /* Example color for additional content */
+}
+
+/* KanbanBoard.css */
+.kanban-column.full-width {
+  width: 100%;
+}

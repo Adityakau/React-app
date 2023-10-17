@@ -1,0 +1,43 @@
+/* TicketCard.css */
+.ticket-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px; /* Add margin for spacing between cards */
+  width: 100%; /* Set the width to 100% to occupy the entire column */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+
+  /* Make each card look different based on priority */
+  &.priority-0 {
+    background-color: white; /* Light gray background for priority 0 */
+  }
+
+  &.priority-1 {
+    background-color: white; /* Light blue background for priority 1 */
+  } 
+
+  &.priority-2 {
+    background-color: white; /* Light orange background for priority 2 */
+  }
+
+  &.priority-3 {
+    background-color: white; /* Light salmon background for priority 3 */
+  }
+
+  &.priority-4 {
+    background-color: white; /* Light red background for priority 4 */
+  }
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right; /* Position the image to the top right */
+  margin-bottom: 8px;
+}
+
+.card-content {
+  margin-bottom: 8px;
+}
