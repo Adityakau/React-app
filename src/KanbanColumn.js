@@ -1,7 +1,7 @@
-// KanbanColumn.js
+
 import React from 'react';
 
-const KanbanColumn = ({ title, tickets }) => {
+const KanbanColumn = ({ title, tickets}) => {
   return (
     <div className="kanban-column">
       <h3>{title}</h3>

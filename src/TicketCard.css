@@ -1,38 +1,39 @@
 /* TicketCard.css */
 .ticket-card {
   border: 1px solid #ddd;
+  font-size: 8px;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px; /* Add margin for spacing between cards */
-  width: 100%; /* Set the width to 100% to occupy the entire column */
+  width: calc(100% - 20px); /* Adjust the width to be a percentage of the column width */
   box-sizing: border-box; /* Include padding and border in the width calculation */
 
   /* Make each card look different based on priority */
   &.priority-0 {
-    background-color: white; /* Light gray background for priority 0 */
+    background-color: white;
   }
 
   &.priority-1 {
-    background-color: white; /* Light blue background for priority 1 */
+    background-color: white;
   } 
 
   &.priority-2 {
-    background-color: white; /* Light orange background for priority 2 */
+    background-color: white;
   }
 
   &.priority-3 {
-    background-color: white; /* Light salmon background for priority 3 */
+    background-color: white;
   }
 
   &.priority-4 {
-    background-color: white; /* Light red background for priority 4 */
+    background-color: white;
   }
 }
 
 .user-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
   object-fit: cover;
   float: right; /* Position the image to the top right */
   margin-bottom: 8px;
@@ -40,4 +41,27 @@
 
 .card-content {
   margin-bottom: 8px;
+}
+
+.cam-number {
+  font-size: 10px;
+  font-weight: bolder;
+  color: rgb(50, 48, 48);
+}
+
+.user-info {
+  padding: 5px;
+}
+
+.feature-request-button {
+  margin: 10px;
+  font-size: 10px;
+  width: 50%;
+  height: 20px;
+}
+
+.card-body {
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 6px;
 }

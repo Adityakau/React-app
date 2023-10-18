@@ -1,4 +1,4 @@
-/* styles.css */
+styles.css
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -124,9 +124,8 @@ body {
 
 .sort-by-label {
   margin-left: 10px; /* Add margin to separate "Sort by" label */
-  font-size: 10px; /* Make the font size smaller */
+  font-size: 10px; /* Make the font size smaller */ 
 }
-
 
 
 

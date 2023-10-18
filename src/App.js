@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import KanbanBoard from './KanbanBoard';
 import './styles.css';
@@ -8,19 +7,19 @@ const App = () => {
   const [groupingOption, setGroupingOption] = useState('status');
   const [sortOption, setSortOption] = useState('priority');
   const [displayOptions, setDisplayOptions] = useState(false);
-  const [loading, setLoading] = useState(true); // Track loading state
-  const [error, setError] = useState(null); // Track fetch error
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('https://api.quicksell.co/v1/internal/frontend-assignment')
       .then((response) => response.json())
       .then((data) => {
         setTickets(data.tickets || []);
-        setLoading(false); // Set loading to false on successful fetch
+        setLoading(false);
       })
       .catch((error) => {
-        setError(error); // Set error state on fetch error
-        setLoading(false); // Set loading to false on fetch error
+        setError(error);
+        setLoading(false);
       });
   }, []);
 
